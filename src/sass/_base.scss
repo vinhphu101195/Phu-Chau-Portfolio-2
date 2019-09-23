@@ -36,4 +36,5 @@ body {
 
 .container {
   display: grid;
+  grid-template-rows: 80vh repeat(5, min-content);
 }

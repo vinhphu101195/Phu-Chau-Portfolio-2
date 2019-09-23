@@ -1,5 +1,4 @@
 .header {
-  height: 80vh;
   background-color: $color-grey-dark-1;
   background-image: linear-gradient(
       rgba($color-secondary, 0.93),
@@ -8,23 +7,23 @@
     url(./background-img/frontend.png);
   background-size: cover;
   background-position: center;
+  padding: 3rem;
+  padding-left: 7rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
-  &__top {
-    padding: 7rem;
-  }
+  justify-content: flex-end;
 
   &__btn {
     align-self: start;
     justify-self: start;
   }
+  &__top {
+    margin: auto 0;
+  }
 
   &__bottom {
     width: 80%;
-    padding-left: 7rem;
   }
 
   &__seenon-text {
