@@ -37,4 +37,11 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-columns:
+    [column-start] 6rem [column-end main-start] repeat(
+      6,
+      [col-start] minmax(min-content, 1fr) [col-end] 6rem
+    )
+    [main-end];
+  grid-row-gap: 3rem;
 }

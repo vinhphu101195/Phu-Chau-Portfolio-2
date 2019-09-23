@@ -1,0 +1,15 @@
+.profile {
+  grid-column: main-start/ col-end 6;
+
+  display: flex;
+
+  &__text {
+    font-size: 1.7rem;
+    margin-left: 5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+}
+.space {
+  margin-left: 2rem;
+}
