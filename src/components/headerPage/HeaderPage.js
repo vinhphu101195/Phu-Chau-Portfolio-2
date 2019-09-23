@@ -13,7 +13,7 @@ const Home = () => {
         <h3 className="heading-3">Work Hard - Play Hard</h3>
       </div>
       <div className="header__bottom">
-        <div class="header__seenon-text">Seen on</div>
+        <div class="header__seenon-text">Technology</div>
         <div class="header__seenon-logos">
           <img src={htmllogo} alt="Seen on logo 1" width="100rem" />
           <img src={csslogo} alt="Seen on logo 2" width="100rem" />
