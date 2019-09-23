@@ -12,7 +12,10 @@ const Profile = () => {
       />
       <div className="profile__infor">
         <p class="profile__text">
-          <h4 className="heading-4">Information</h4>
+          <h4 className="heading-4">
+            <i class="fa fa-user icon" aria-hidden="true"></i>
+            Information
+          </h4>
           &nbsp;&nbsp;&nbsp; My name is Phu Chau, I'm studying at Turku
           University of Applied Sciences in Finland. I have 1 years experience
           building and maintaining responsive websites in the recruiting
@@ -24,7 +27,10 @@ const Profile = () => {
           about learning new things and outsite activity.
           <br></br>
           <br></br>
-          <h4 className="heading-4">Experience</h4>
+          <h4 className="heading-4">
+            <i class="fa fa-code icon" aria-hidden="true"></i>
+            Experience
+          </h4>
           06.2018 - 07.2019: Student Assistant of TUAS as Web developer.
         </p>
       </div>
