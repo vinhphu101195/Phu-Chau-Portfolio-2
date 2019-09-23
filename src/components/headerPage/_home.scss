@@ -21,9 +21,6 @@
     align-self: start;
     justify-self: start;
   }
-  & > *:not(:last-child) {
-    margin-bottom: 1rem;
-  }
 
   &__bottom {
     width: 80%;
