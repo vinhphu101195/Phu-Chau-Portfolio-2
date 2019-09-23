@@ -2,36 +2,24 @@
   height: 80vh;
   background-color: $color-grey-dark-1;
   background-image: linear-gradient(
-    rgba($color-secondary, 0.93),
-    rgba($color-secondary, 0.93)
-  );
+      rgba($color-secondary, 0.93),
+      rgba($color-secondary, 0.93)
+    ),
+    url(./background-img/frontend.png);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem;
+  padding-top: 4rem;
 
-  display: grid;
-  // grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
-  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   &__btn {
     align-self: start;
     justify-self: start;
   }
-
-  &__infor {
-    grid-column: 1 / span 3;
-    background-image: linear-gradient(
-        rgba($color-secondary, 0.93),
-        rgba($color-secondary, 0.93)
-      ),
-      url(./background-img/frontend.png);
-    background-position: center;
-    padding: 8rem;
-    padding-top: 4rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  &__avatar {
-    grid-column: 4 / span 1;
+  & > *:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
