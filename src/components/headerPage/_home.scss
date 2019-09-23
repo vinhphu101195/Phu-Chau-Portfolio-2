@@ -8,18 +8,27 @@
     url(./background-img/frontend.png);
   background-size: cover;
   background-position: center;
-  padding: 8rem;
-  padding-top: 4rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  &__top {
+    padding: 7rem;
+  }
 
   &__btn {
     align-self: start;
     justify-self: start;
   }
   & > *:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  // logo
+  &__seenon-logos {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
   }
 }
