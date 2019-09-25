@@ -1,7 +1,6 @@
 .skills {
   background-color: #fff;
-  padding: 2rem;
-  grid-column: column-start/ main-end;
+  grid-column: main-start/ main-end;
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 33%));
   grid-template-rows: min-content max-content;

@@ -1,0 +1,9 @@
+.projects {
+  background-color: $color-grey-light-1;
+  grid-column: main-start/ main-end;
+  margin: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 7rem;
+}

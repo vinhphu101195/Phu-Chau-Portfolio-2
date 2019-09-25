@@ -1,7 +1,20 @@
 import React from "react";
+import SmallProject from "./SmallProject";
 
 const Projects = () => {
-  return <div></div>;
+  return (
+    <section className="projects">
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+      <SmallProject></SmallProject>
+    </section>
+  );
 };
 
 export default Projects;
