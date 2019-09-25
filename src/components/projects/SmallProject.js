@@ -1,26 +1,22 @@
 import React from "react";
+import advancedcss from "./advanced-css.PNG";
 
 const SmallProject = () => {
   return (
-    <div class="home">
-      <img src="img/house-1.jpeg" alt="House 1" class="home__img" />
+    <div className="project">
+      <img src={advancedcss} alt="House 1" className="project__img" />
 
-      <h5 class="home__name">Beautiful Familiy House</h5>
-      <div class="home__location">
-        <p>USA</p>
-      </div>
-      <div class="home__rooms">
-        <p>5 rooms</p>
-      </div>
-      <div class="home__area">
+      <h5 className="project__name">Beautiful Familiy House</h5>
+      <div className="project__detail">
         <p>
-          325 m<sup>2</sup>
+          I'm working at Front-end position in the Fincoda Project, the
+          project's from my university which is Turku AMK The Fincoda Survey
+          system is a tool for universities and other working life organizations
+          for measuring individuals’ innovation competencies.
         </p>
       </div>
-      <div class="home__price">
-        <p>$1,200,000</p>
-      </div>
-      <button class="btn home__btn">Contact realtor</button>
+
+      <button className="btn project__btn">More Information</button>
     </div>
   );
 };
