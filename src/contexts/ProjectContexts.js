@@ -60,29 +60,42 @@ import drapdop1 from "./project-img/drap-drop/drap-drop-1.PNG";
 import drapdop2 from "./project-img/drap-drop/drap-drop-2.PNG";
 import drapdop3 from "./project-img/drap-drop/drap-drop-3.PNG";
 
+import gridcss from "./project-img/grid.PNG";
+import gridcss1 from "./project-img/grid-css/grid-1.PNG";
+import gridcss2 from "./project-img/grid-css/grid-2.PNG";
+import gridcss3 from "./project-img/grid-css/grid-3.PNG";
+import gridcss4 from "./project-img/grid-css/grid-4.PNG";
+import gridcss5 from "./project-img/grid-css/grid-5.PNG";
+
 import reacthook from "./project-img/react-hook.PNG";
 import reacthook1 from "./project-img/react-hook/react-hook-1.PNG";
 import reacthook2 from "./project-img/react-hook/react-hook-3.PNG";
 import reacthook3 from "./project-img/react-hook/react-hook-4.PNG";
 import reacthook4 from "./project-img/react-hook/react-hook-5.PNG";
 
+import portfolio from "./project-img/portfolio.png";
+import portfolio1 from "./project-img/portfolio/portfolio2.png";
+import portfolio2 from "./project-img/portfolio/portfolio3.png";
+import portfolio3 from "./project-img/portfolio/portfolio4.png";
+import portfolio4 from "./project-img/portfolio/portfolio5.png";
+
 export const ProjectContext = createContext();
 
 const ProjectContexts = props => {
-  var project = {
-    Fincoda: {
+  var projectObject = [
+    {
       name: "The Fincoda Project",
       img: Fincoda,
-      skills: ["HTML", "CSS", "Bootstrap", "Jquery", "SQL"],
+      skills: ["HTML", "CSS", "Bootstrap", "Jquery", "Mysql"],
       sourcecode: "",
       demo: "https://fincoda.dc.turkuamk.fi/",
       description: `I'm working at Front-end position in the Fincoda Project, the project's from my university which is Turku AMK
     The Fincoda Survey system is a tool for universities and other working life organizations 
     for measuring individuals’ innovation competencies.     
     `,
-      photo: [Fincoda1, Fincoda2, Fincoda3, Fincoda4, Fincoda5]
+      photo: [Fincoda, Fincoda1, Fincoda2, Fincoda3, Fincoda4, Fincoda5]
     },
-    Recipes: {
+    {
       name: "The Recipes Project",
       img: Recipes,
       skills: ["HTML", "CSS", "Bootstrap", "Reactjs", "Redux"],
@@ -92,9 +105,9 @@ const ProjectContexts = props => {
     You can input the food's name which you want to eat at the search bar, then it will show you how to cook it,
     what ingredients do you need to buy and time for cooking. You can like that recipe and add to the shopping list
     `,
-      photo: [recipes1, recipes2, recipes3]
+      photo: [Recipes, recipes1, recipes2, recipes3]
     },
-    Diary: {
+    {
       name: "The Diary Project",
       img: Diary,
       skills: ["HTML", "CSS", "Frirebase", "Reactjs", "Redux", "React Router"],
@@ -104,9 +117,19 @@ const ProjectContexts = props => {
     use React, Redux, React Router and Firebase in a project. There are authentication function and storing 
     data from Firebase. The user can sign up and sign in, then user can create a plan with the title and content.
     `,
-      photo: [diary1, diary2, diary3, diary4, diary5]
+      photo: [Diary, diary1, diary2, diary3, diary4, diary5]
     },
-    Todolist: {
+    {
+      name: "The Shopping Project",
+      img: Shopping,
+      skills: ["Boostrap", "Reactjs", "Redux", "React Router"],
+      sourcecode: "https://github.com/vinhphu101195/shopping",
+      demo: "https://phuchaushopping.herokuapp.com/",
+      description: `The project show status of the products, the data of product is stored in mockapi.io. User can Add, Edit and delete the items.
+    `,
+      photo: [Shopping, shopping1, shopping2, shopping3]
+    },
+    {
       name: "The To-do List Project",
       img: Todolist,
       skills: ["HTML", "CSS", "Reactjs"],
@@ -115,19 +138,10 @@ const ProjectContexts = props => {
       description: `To-Do List project is used the basic of React, the user can create a to-do list and
     it is stored in the local storage. There are some function: Add, Find, Sort, Edit and Delete.
     `,
-      photo: [todolist1, todolist2, todolist3]
+      photo: [Todolist, todolist1, todolist2, todolist3]
     },
-    Shopping: {
-      name: "The Shopping Project",
-      img: Shopping,
-      skills: ["Boostrap", "Reactjs", "Redux", "React Router"],
-      sourcecode: "https://github.com/vinhphu101195/shopping",
-      demo: "https://phuchaushopping.herokuapp.com/",
-      description: `The project show status of the products, the data of product is stored in mockapi.io. User can Add, Edit and delete the items.
-    `,
-      photo: [shopping1, shopping2, shopping3]
-    },
-    advancedcss: {
+
+    {
       name: "The Advanced CSS",
       img: advancedcss,
       skills: ["HTML", "CSS"],
@@ -135,9 +149,15 @@ const ProjectContexts = props => {
       demo: "https://vinhphu101195.github.io/Advance-HTML-CSS/",
       description: `I take the advance HTML CSS course from Udemy. I learned SASS and Tons of modern CSS techniques to create stunning designs and effects.  
     `,
-      photo: [advancedcss1, advancedcss2, advancedcss3, advancedcss4]
+      photo: [
+        advancedcss,
+        advancedcss1,
+        advancedcss2,
+        advancedcss3,
+        advancedcss4
+      ]
     },
-    Omnifood: {
+    {
       name: "The Omnifood Project",
       img: Omnifood,
       skills: ["HTML", "CSS", "Jquery", "Google Maps Framework"],
@@ -146,9 +166,9 @@ const ProjectContexts = props => {
       description: `My first HTML and CSS project from Udemy. I love it, it teached me everything i need to know to get started with HTML5 and CSS3, and 
     learn super cool jQuery effects like animations, scroll effects and "sticky" navigation.    
     `,
-      photo: [omnifood1, omnifood2, omnifood3, omnifood4]
+      photo: [Omnifood, omnifood1, omnifood2, omnifood3, omnifood4]
     },
-    ambassadornetwork: {
+    {
       name: "The Ambassador Network",
       img: ambassadornetwork,
       skills: ["HTML", "CSS", "Google Maps Framework"],
@@ -158,6 +178,7 @@ const ProjectContexts = props => {
     I working in the Front-end position in the project.  
     `,
       photo: [
+        ambassadornetwork,
         ambassadornetwork1,
         ambassadornetwork2,
         ambassadornetwork3,
@@ -165,19 +186,19 @@ const ProjectContexts = props => {
         ambassadornetwork5
       ]
     },
-    chatting: {
+    {
       name: "Chatting Project",
       img: Chatting,
       skills: ["Reactjs", "Firebase"],
       sourcecode: "https://github.com/vinhphu101195/chatting",
       demo: "https://pc-chatting.herokuapp.com/",
-      description: `The project idea is from https://codelabs.developers.google.com/codelabs/firebase-web/#13, 
+      description: `The project idea is from codelabs, 
     so i cloned it with React.
     User can login with google account, then they can start chatting.
 `,
       photo: [Chatting]
     },
-    bookinglayout: {
+    {
       name: "The Advanced CSS with Flex",
       img: bookinglayout,
       skills: ["HTML", "CSS"],
@@ -185,10 +206,10 @@ const ProjectContexts = props => {
       demo: "https://vinhphu101195.github.io/Booking-layout-html-css/",
       description: `I use advance CSS to do this project with display Flexbox. It is the design from Jonas Schmedtmann. 
     `,
-      photo: [bookinglayout1, bookinglayout2, bookinglayout3]
+      photo: [bookinglayout, bookinglayout1, bookinglayout2, bookinglayout3]
     },
-    drapdrop: {
-      name: "Drap and Drop React Beautiful dnd",
+    {
+      name: "Drap & Drop React Beautiful dnd",
       img: drapdop,
       skills: ["HTML", "CSS", "Reactjs", "react-beautiful-dnd"],
       sourcecode:
@@ -198,17 +219,17 @@ const ProjectContexts = props => {
     `,
       photo: [drapdop1, drapdop2, drapdop3]
     },
-    Nexter: {
+    {
       name: "Nexter Advance CSS Grid",
-      img: drapdop,
+      img: gridcss1,
       skills: ["HTML", "CSS"],
       sourcecode: "https://github.com/vinhphu101195/Nexter-Advance-CSS-Grid",
       demo: "https://vinhphu101195.github.io/Nexter-Advance-CSS-Grid/",
       description: `The project is design by Jonas Schmedtmann, and I used grid and flexbox to build it 
     `,
-      photo: [drapdop1, drapdop2, drapdop3]
+      photo: [gridcss, gridcss1, gridcss2, gridcss3, gridcss4, gridcss5]
     },
-    ReactHook: {
+    {
       name: "Library with React Hook",
       img: reacthook,
       skills: ["HTML", "CSS", "Reactjs"],
@@ -217,9 +238,23 @@ const ProjectContexts = props => {
       description: `in this project, i start to learn what new in React Hook and combine it with react context, i start to use "createContext,useContext,useState,useReducer, useEffect" 
     `,
       photo: [reacthook1, reacthook2, reacthook3, reacthook4]
+    },
+    {
+      name: "My Portfolio 1",
+      img: portfolio,
+      skills: ["HTML", "CSS", "Reactjs", "React Router"],
+      sourcecode: "https://github.com/vinhphu101195/Phu-Chau-Portfolio",
+      demo: "https://phuchauportfolio.netlify.com",
+      description:
+        "It is my frist portfolio, I use Reactjs and React Router for this project",
+      photo: [portfolio, portfolio1, portfolio2, portfolio3, portfolio4]
     }
-  };
-  return <ProjectContext value={project}>{props.children}</ProjectContext>;
+  ];
+  return (
+    <ProjectContext.Provider value={{ projectObject }}>
+      {props.children}
+    </ProjectContext.Provider>
+  );
 };
 
 export default ProjectContexts;

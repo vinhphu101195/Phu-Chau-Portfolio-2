@@ -1,20 +1,35 @@
 import React from "react";
-import advancedcss from "./advanced-css.PNG";
 
-const SmallProject = () => {
+const SmallProject = props => {
+  console.log("hello");
+
+  console.log(props);
+
+  var showSkills = skills => {
+    var result = null;
+    if (skills.length > 0) {
+      result = skills.map((skill, index) => {
+        return (
+          <p className="project__detail__item">
+            <i class="fa fa-check icon" aria-hidden="true"></i>
+            {skill}
+          </p>
+        );
+      });
+    }
+    return result;
+  };
+
   return (
     <div className="project">
-      <img src={advancedcss} alt="House 1" className="project__img" />
+      <img
+        src={props.project.img}
+        alt="avatar of the project"
+        className="project__img"
+      />
 
-      <h5 className="project__name">Beautiful Familiy House</h5>
-      <div className="project__detail">
-        <p>
-          I'm working at Front-end position in the Fincoda Project, the
-          project's from my university which is Turku AMK The Fincoda Survey
-          system is a tool for universities and other working life organizations
-          for measuring individuals’ innovation competencies.
-        </p>
-      </div>
+      <h5 className="project__name">{props.project.name}</h5>
+      <div className="project__detail">{showSkills(props.project.skills)}</div>
 
       <button className="btn project__btn">More Information</button>
     </div>

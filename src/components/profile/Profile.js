@@ -11,9 +11,9 @@ const Profile = () => {
         width="300rem"
       />
       <div className="profile__infor">
-        <p class="profile__text">
+        <div className="profile__text">
           <h4 className="heading-4">
-            <i class="fa fa-user icon" aria-hidden="true"></i>
+            <i className="fa fa-user icon" aria-hidden="true"></i>
             Information
           </h4>
           &nbsp;&nbsp;&nbsp; My name is Phu Chau, I'm studying at Turku
@@ -28,11 +28,11 @@ const Profile = () => {
           <br></br>
           <br></br>
           <h4 className="heading-4">
-            <i class="fa fa-code icon" aria-hidden="true"></i>
+            <i className="fa fa-code icon" aria-hidden="true"></i>
             Experience
           </h4>
           06.2018 - 07.2019: Student Assistant of TUAS as Web developer.
-        </p>
+        </div>
       </div>
     </section>
   );
