@@ -150,7 +150,6 @@ const ProjectContexts = props => {
       description: `I take the advance HTML CSS course from Udemy. I learned SASS and Tons of modern CSS techniques to create stunning designs and effects.  
     `,
       photo: [
-        advancedcss,
         advancedcss1,
         advancedcss2,
         advancedcss3,
@@ -166,7 +165,7 @@ const ProjectContexts = props => {
       description: `My first HTML and CSS project from Udemy. I love it, it teached me everything i need to know to get started with HTML5 and CSS3, and 
     learn super cool jQuery effects like animations, scroll effects and "sticky" navigation.    
     `,
-      photo: [Omnifood, omnifood1, omnifood2, omnifood3, omnifood4]
+      photo: [omnifood1, omnifood2, omnifood3, omnifood4]
     },
     {
       name: "The Ambassador Network",
@@ -179,7 +178,7 @@ const ProjectContexts = props => {
     `,
       photo: [
         ambassadornetwork,
-        ambassadornetwork1,
+
         ambassadornetwork2,
         ambassadornetwork3,
         ambassadornetwork4,
@@ -206,7 +205,7 @@ const ProjectContexts = props => {
       demo: "https://vinhphu101195.github.io/Booking-layout-html-css/",
       description: `I use advance CSS to do this project with display Flexbox. It is the design from Jonas Schmedtmann. 
     `,
-      photo: [bookinglayout, bookinglayout1, bookinglayout2, bookinglayout3]
+      photo: [bookinglayout1, bookinglayout2, bookinglayout3]
     },
     {
       name: "Drap & Drop React Beautiful dnd",
@@ -227,7 +226,7 @@ const ProjectContexts = props => {
       demo: "https://vinhphu101195.github.io/Nexter-Advance-CSS-Grid/",
       description: `The project is design by Jonas Schmedtmann, and I used grid and flexbox to build it 
     `,
-      photo: [gridcss, gridcss1, gridcss2, gridcss3, gridcss4, gridcss5]
+      photo: [gridcss1, gridcss2, gridcss3, gridcss4, gridcss5]
     },
     {
       name: "Library with React Hook",

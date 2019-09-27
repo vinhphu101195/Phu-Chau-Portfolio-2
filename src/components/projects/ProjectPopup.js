@@ -67,22 +67,39 @@ export default function ProjectPopup(props) {
           className="slider-image"
           alt="example of project"
         />
-        <div className="button-container-popup ">
-          <span
-            className="button-container-popup__left"
-            onClick={() => onclickLeft()}
-          >
-            <i className="fas fa-chevron-circle-left" />
-          </span>
-          <span
-            className="button-container-popup__right"
-            onClick={() => onclickRight()}
-          >
-            <i className="fas fa-chevron-circle-right" />
-          </span>
-        </div>
+        {photoIndex === 0 ? <div className="button-container-popup ">  <span
+          className="button-container-popup__right"
+          onClick={() => onclickRight()}
+        >
+          <i className="fas fa-chevron-circle-right" />
+        </span>
+        </div> : photoIndex === newprops.photo.length - 1 ?
+            <div className="button-container-popup ">
+              <span
+                className="button-container-popup__left"
+                onClick={() => onclickLeft()}
+              >
+                <i className="fas fa-chevron-circle-left" />
+              </span>
+            </div>
+
+            : <div className="button-container-popup ">
+              <span
+                className="button-container-popup__left"
+                onClick={() => onclickLeft()}
+              >
+                <i className="fas fa-chevron-circle-left" />
+              </span>
+              <span
+                className="button-container-popup__right"
+                onClick={() => onclickRight()}
+              >
+                <i className="fas fa-chevron-circle-right" />
+              </span>
+            </div>}
+
       </div>
-    </div>
+    </div >
   );
 }
 
