@@ -27,12 +27,16 @@ const SmallProject = props => {
       <h5 className="project__name">{props.project.name}</h5>
       <div className="project__detail">{showSkills(props.project.skills)}</div>
 
-      <button
-        className="btn project__btn"
-        onClick={() => props.onClickPopup(props.project)}
-      >
-        More Information
+      <a href="#popup" className="project__a">
+        <button
+          className="btn project__a__btn"
+          onClick={() => props.onClickPopup(props.project)}
+        >
+          More Information
+
       </button>
+      </a>
+
     </div>
   );
 };

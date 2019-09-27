@@ -28,65 +28,58 @@ export default function ProjectPopup(props) {
   return (
     <div className="popup" id="popup">
       <div className="popup__content">
-        <div className="popup__right">
-          <div className="popup__right-heading">
-            <h2 className="heading-secondary u-margin-bottom-medium popup__right-heading">
-              {newprops.name}
-            </h2>
-            <h3 className="heading-tertiary u-margin-bottom-small">
-              {Object.getOwnPropertyNames(newprops).length === 0
-                ? ""
-                : showSkills(newprops.skills)}
-            </h3>
-            <div className="link-source">
-              <a
-                href={newprops.sourcecode}
-                target="_blank"
-                rel="noopener noreferrer "
-                className="link-popup"
-              >
-                <span>Source Code</span>{" "}
-              </a>
-              |
-              <a
-                href={newprops.demo}
-                target="_blank"
-                rel="noopener noreferrer "
-                className="link-popup"
-              >
-                <span> Demo</span>
-              </a>
-            </div>
-          </div>
-          <a href="#projects" className="popup__close">
-            &times;
+        <h2 className="heading-2 popup__heading">
+          {newprops.name}
+        </h2>
+        <div className="popup__label--skills">
+          {Object.getOwnPropertyNames(newprops).length === 0
+            ? ""
+            : showSkills(newprops.skills)}
+        </div>
+        <div className="popup__link-source">
+          {newprops.sourcecode ? <a
+            href={newprops.sourcecode}
+            target="_blank"
+            rel="noopener noreferrer "
+            className="popup__link-source__detail"
+          >
+            <span>Source Code |</span>
           </a>
-          <p className="popup__text">{newprops.description}</p>
+            : ""}
 
-          {/* slider img */}
-          <div className="slide-container">
-            <div className="image-container">
-              <img
-                src={photoSrc}
-                className="slider-image"
-                alt="example of project"
-              />
-            </div>
-            <div className="button-container-popup ">
-              <span
-                className="left-button-container"
-                onClick={() => onclickLeft()}
-              >
-                <i className="fas fa-chevron-circle-left" />
-              </span>
-              <span
-                className="right-button-container"
-                onClick={() => onclickRight()}
-              >
-                <i className="fas fa-chevron-circle-right" />
-              </span>
-            </div>
-          </div>
+          <a
+            href={newprops.demo}
+            target="_blank"
+            rel="noopener noreferrer "
+            className="popup__link-source__detail"
+          >
+            <span> Demo</span>
+          </a>
+        </div>
+        <a href="#projects" className="popup__close">
+          &times;
+          </a>
+        <p className="popup__text">{newprops.description}</p>
+
+        {/* slider img */}
+        <img
+          src={photoSrc}
+          className="slider-image"
+          alt="example of project"
+        />
+        <div className="button-container-popup ">
+          <span
+            className="button-container-popup__left"
+            onClick={() => onclickLeft()}
+          >
+            <i className="fas fa-chevron-circle-left" />
+          </span>
+          <span
+            className="button-container-popup__right"
+            onClick={() => onclickRight()}
+          >
+            <i className="fas fa-chevron-circle-right" />
+          </span>
         </div>
       </div>
     </div>
@@ -98,7 +91,7 @@ var showSkills = skills => {
   if (skills.length > 0) {
     result = skills.map((skill, index) => {
       return (
-        <span className="label-popup" key={index}>
+        <span className="popup__label--skills__detail" key={index}>
           {skill}
         </span>
       );

@@ -61,7 +61,11 @@
     }
   }
 
-  &__btn {
+  &__a {
     grid-column: 1 / span 2;
+
+    &__btn{
+      width: 100%;
+    }
   }
 }
