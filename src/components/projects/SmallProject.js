@@ -1,17 +1,13 @@
 import React from "react";
 
 const SmallProject = props => {
-  console.log("hello");
-
-  console.log(props);
-
   var showSkills = skills => {
     var result = null;
     if (skills.length > 0) {
       result = skills.map((skill, index) => {
         return (
-          <p className="project__detail__item">
-            <i class="fa fa-check icon" aria-hidden="true"></i>
+          <p className="project__detail__item" key={index}>
+            <i className="fa fa-check icon" aria-hidden="true"></i>
             {skill}
           </p>
         );
@@ -31,7 +27,12 @@ const SmallProject = props => {
       <h5 className="project__name">{props.project.name}</h5>
       <div className="project__detail">{showSkills(props.project.skills)}</div>
 
-      <button className="btn project__btn">More Information</button>
+      <button
+        className="btn project__btn"
+        onClick={() => props.onClickPopup(props.project)}
+      >
+        More Information
+      </button>
     </div>
   );
 };
