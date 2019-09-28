@@ -1,0 +1,127 @@
+.contact{
+    grid-column: column-start/ main-end;
+    background-color: $color-grey-light-1;
+    font-size: 1.2rem;
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+
+    &__infor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header{
+            padding-top: 3.125rem;
+            margin-bottom: 2.125rem;
+            font-size: 5rem;
+        }
+        &__text{
+            letter-spacing: 1.9px;
+            font-size: 300;
+            margin-left: 1.5rem;
+        }
+        &__adress,&__phone,&__email{
+            margin-bottom: 2rem;
+
+        }
+
+        &__social-media{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        &__social-media{
+            position: relative;
+            font-size: 2.3rem;
+            text-align: center;
+            margin-right: 1.56rem;
+            & div a{
+                color: currentColor;
+            }
+
+            & div{
+                position: relative;
+                top: 0;
+                left: -1.25rem;
+                display: inline-block;
+                height: 4.375rem;
+                width: 4.375rem;
+                margin: 0.625rem auto;
+                line-height: 4.375rem;
+                border-radius: 50%;
+                color: #fff;
+                background-color: $color-secondary;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+
+                &:hover{              
+                    background-color: $color-primary;        
+                    transform: translateY(-3px);           
+                }
+            }
+
+            & div:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 4.375rem;
+                height: 4.375rem;
+                line-height: 4.375rem;
+                border-radius: 50%;
+                opacity: 0;
+                box-shadow: 0 0 0 2px $color-primary;
+                transition: all 0.2s ease-in-out;
+                z-index: -1;
+              }
+
+            & div:hover:before {
+                opacity: 1;
+                -webkit-transform: scale(1.12);
+                transform: scale(1.12);
+                transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+              }
+              
+        }
+    }
+}
+
+.gmail{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+        color:$color-primary;
+    }
+}
+
+
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate-center {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-name: rotate-center;
+    animation-name: rotate-center;
+  }
