@@ -1,3 +1,21 @@
 .reference{
     grid-column: main-start/ col-end 6; 
+
+    margin: 0 auto;
+
+    &__header{
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+
+    &__infor__text{
+        font-size: 2rem;
+        color: $color-secondary;
+        line-height: 3rem;
+        text-align: center;
+
+        &__name{
+            font-size: 2.5rem;
+        }
+    }
 }
