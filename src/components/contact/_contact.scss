@@ -132,6 +132,7 @@
     font-size: 1.2rem;
 
    display: flex;
+   justify-content: space-around;
 
     &__email{
       color: #fff;
@@ -159,7 +160,6 @@
             padding-top: 3.125rem;
             margin-bottom: 2.125rem;
             font-size: 4rem;
-            margin-left: 5rem;
         }
         &__text{
             letter-spacing: 1.9px;

@@ -23,7 +23,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__infor">
-                <h1 className="heading-3  contact__infor__header">FEEL FREE TO CONTACT</h1>
+                <h1 className="heading-3  contact__infor__header">MY FREE CONTACT</h1>
                 <div className="contact__infor__detail">
                     <div className="contact__infor__adress">
                         <i className="fas fa-map-marker-alt fa-2x">
