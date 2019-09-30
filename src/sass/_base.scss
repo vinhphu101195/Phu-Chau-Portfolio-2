@@ -36,7 +36,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 80vh repeat(5, min-content);
+  grid-template-rows: 80vh repeat(7, min-content);
   grid-template-columns:
     [column-start] 6rem [column-end main-start] repeat(
       6,

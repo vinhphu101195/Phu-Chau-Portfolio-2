@@ -7,6 +7,7 @@ import Profile from "./components/profile/Profile";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import Reference from './components/reference/Reference';
 
 import "./sass/main.scss";
 
@@ -19,6 +20,7 @@ function App() {
         <Skills></Skills>
         <Projects></Projects>
         <Contact></Contact>
+        <Reference></Reference>
       </ProjectContexts>
     </div>
   );

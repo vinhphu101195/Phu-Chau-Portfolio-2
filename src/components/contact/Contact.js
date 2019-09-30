@@ -33,7 +33,7 @@ const Contact = () => {
 
                     <div className="contact__infor__phone">
                         <i className="fas fa-mobile-alt fa-2x">
-                            <span className="contact__infor__text phone">(+358) 469547704</span>
+                            <span className="contact__infor__text phone">(+358) 469547704 (WhatsApp)</span>
                         </i>
                     </div>
 
