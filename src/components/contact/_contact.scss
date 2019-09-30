@@ -65,7 +65,7 @@
        font-size: 18px;
        line-height: 26px;
        font-weight: 400;
-       
+       background-color: $color-secondary;
        &:focus {
           outline: none;
        }
@@ -85,14 +85,14 @@
        font-size: 18px;
        line-height: 26px;
        font-weight: 400;
-       color: #888;
+       color: $color-primary;
        cursor: text;
        transition: transform .2s ease-in-out;
     }
     
     .submit-btn {
        display: inline-block;
-       background-color: #000;
+       background-color: $color-primary;
        color: #fff;
        font-family: Raleway, sans-serif;
        text-transform: uppercase;
@@ -125,19 +125,25 @@
  }
 
 .contact{
-    grid-column: column-start/ main-end;
-    background-color: $color-grey-light-1;
+    grid-column: main-start/ col-end 6;
+    background-image: linear-gradient(105deg, $color-secondary 0%, $color-secondary 50%, transparent 50%);
+
     font-size: 1.2rem;
 
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
 
     &__email{
-        background-color: $color-secondary;
-        color: #fff;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10rem 0;
 
         &__title{
             font-size: 4.5rem;
+            padding-top: 3.125rem;
+
         }
     }
 
@@ -153,6 +159,7 @@
             padding-top: 3.125rem;
             margin-bottom: 2.125rem;
             font-size: 4.5rem;
+            margin-left: 5rem;
         }
         &__text{
             letter-spacing: 1.9px;

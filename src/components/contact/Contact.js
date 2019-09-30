@@ -18,10 +18,8 @@ const Contact = () => {
                         <input id="message" className="input-text js-input" type="text" required />
                         <label className="label" htmlFor="message">Message</label>
                     </div>
-                    <div className="form-field col x-100 align-center">
-                        <input className="submit-btn" type="submit" value="Submit" />
-                    </div>
                 </form>
+                <input className="btn mt-2" type="submit" value="Submit" />
             </div>
 
             <div className="contact__infor">
