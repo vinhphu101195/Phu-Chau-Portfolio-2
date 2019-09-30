@@ -3,7 +3,26 @@ import React from 'react';
 const Contact = () => {
     return (
         <section className="contact">
-            <div className="contact__email">Hello </div>
+            <div className="contact__email">
+                <h1 className="contact__email__title heading-3">Get in touch</h1>
+                <form className="contact-form row">
+                    <div className="form-field col x-50">
+                        <input id="name" className="input-text js-input" type="text" required />
+                        <label className="label" htmlFor="name">Name</label>
+                    </div>
+                    <div className="form-field col x-50">
+                        <input id="email" className="input-text js-input" type="email" required />
+                        <label className="label" htmlFor="email">E-mail</label>
+                    </div>
+                    <div className="form-field col x-100">
+                        <input id="message" className="input-text js-input" type="text" required />
+                        <label className="label" htmlFor="message">Message</label>
+                    </div>
+                    <div className="form-field col x-100 align-center">
+                        <input className="submit-btn" type="submit" value="Submit" />
+                    </div>
+                </form>
+            </div>
 
             <div className="contact__infor">
                 <h1 className="heading-3  contact__infor__header">FEEL FREE TO CONTACT</h1>
