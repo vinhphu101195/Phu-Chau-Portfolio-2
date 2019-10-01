@@ -15,10 +15,10 @@ const Home = () => {
       <div className="header__bottom">
         <div className="header__seenon-text">Technology</div>
         <div className="header__seenon-logos">
-          <img src={htmllogo} alt="Seen on logo 1" width="100rem" />
-          <img src={csslogo} alt="Seen on logo 2" width="100rem" />
-          <img src={javascriptlogo} alt="Seen on logo 3" width="100rem" />
-          <img src={react} alt="Seen on logo 4" width="100rem" />
+          <img src={htmllogo} alt="Seen on logo 1" className="header__bottom__logo" />
+          <img src={csslogo} alt="Seen on logo 2" className="header__bottom__logo" />
+          <img src={javascriptlogo} alt="Seen on logo 3" className="header__bottom__logo" />
+          <img src={react} alt="Seen on logo 4" className="header__bottom__logo" />
         </div>
       </div>
     </header>

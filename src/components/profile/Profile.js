@@ -7,7 +7,7 @@ const Profile = () => {
       <img
         src={avatar}
         alt="Seen on logo 1"
-        className="profile-avatar"
+        className="profile__avatar"
         width="300rem"
       />
       <div className="profile__infor">

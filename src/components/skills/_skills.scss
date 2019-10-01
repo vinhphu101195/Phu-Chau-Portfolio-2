@@ -5,11 +5,20 @@
   grid-template-columns: repeat(3, minmax(min-content, 33%));
   grid-template-rows: min-content max-content;
   grid-row-gap: 5rem;
+
+  
+
+
   &__header {
     margin-right: 11%;
     grid-row: 1 / span 1;
     grid-column: 1 / span 3;
     justify-self: flex-end;
+    @media only screen and (max-width: $bp-small) {
+      justify-self: stretch;
+      margin-right: 0;
+      text-align: center;
+    } 
 
     &-small {
       color: $color-grey-dark-1;
@@ -22,6 +31,9 @@
     grid-column: 1 / span 1;
     justify-self: center;
     width: 80%;
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+    } 
 
     ul {
       list-style: none;
@@ -31,6 +43,9 @@
     grid-column: 2 / span 1;
     justify-self: center;
     width: 80%;
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+    } 
     ul {
       list-style: none;
     }
@@ -39,6 +54,9 @@
     grid-column: 3 / span 1;
     justify-self: center;
     width: 80%;
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+    } 
     ul {
       list-style: none;
     }
@@ -48,7 +66,7 @@
 .skill {
   &__data {
     color: $color-secondary;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 

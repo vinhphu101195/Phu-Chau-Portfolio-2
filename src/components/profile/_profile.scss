@@ -2,12 +2,22 @@
   grid-column: main-start/ col-end 6;
 
   display: flex;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+  } 
 
   &__text {
     font-size: 1.7rem;
     margin-left: 5rem;
     font-weight: 600;
     margin-top: 1rem;
+  }
+
+  &__avatar{
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 5rem;
+    } 
   }
 }
 .space {

@@ -106,6 +106,9 @@
   flex-direction: column;
   justify-content:space-around;
   align-content: center;
+  @media only screen and (max-width: $bp-small) {
+    justify-content:center;
+  }
 
 }
 
@@ -113,12 +116,19 @@
   height: 50%;
   width: 75%;
   align-self: center;
+
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
 }
 .button-container-popup {
   align-self: center;
   font-size: 2rem;
   padding: 0.5rem;
   color:$color-grey-light-1;
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
 
   &__left{
     margin-right: 1rem;
@@ -132,12 +142,13 @@
 
 @media only screen and (max-width: 480px) {
   .popup__content {
-    width: 100vw;
+    width: 80vw;
     display: inline-block;
-    height: 60vh;
+    height: 50vh;
+
   }
   .popup__text {
-    display: none;
+    display: block;
   }
   .slide-container {
     display: none;

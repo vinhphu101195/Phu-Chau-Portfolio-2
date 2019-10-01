@@ -14,6 +14,12 @@ $color-grey-dark-2: #6d5d4b;
 $font-primary: "Nunito", sans-serif;
 $font-display: "Josefin Sans", sans-serif;
 
+//RESPONSIVE BREAKPOINTS
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; // 800/16:  800px;
+$bp-small: 41em; //650/16  600px;
+$bp-supersmall: 25em; //400/16;
+
 *,
 *::before,
 *::after {
@@ -25,6 +31,13 @@ $font-display: "Josefin Sans", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; //10/16px = 62.5% -> 1rem = 10px
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-supersmall) {
+    font-size: 40%;
+  }
+
 }
 
 body {
