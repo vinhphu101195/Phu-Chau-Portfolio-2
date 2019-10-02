@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import ProjectContexts from "./contexts/ProjectContexts";
 
@@ -13,6 +13,7 @@ import Footer from "./components/footer/Footer";
 import "./sass/main.scss";
 
 function App() {
+
   return (
     <div className="container">
       <ProjectContexts>

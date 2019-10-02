@@ -9,7 +9,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <i class="fa fa-download icon" aria-hidden="true"></i>
+                    <i className="fa fa-download icon" aria-hidden="true"></i>
                     My Resume
             </a>
                 <p className="footer__text">

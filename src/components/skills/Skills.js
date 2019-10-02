@@ -16,6 +16,9 @@ const Skills = () => {
     Problem: 90,
     Orgranizing: 90
   };
+
+
+
   return (
     <section className="skills">
       <h2 className="heading-2 skills__header">My Skills</h2>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 export default function ProjectPopup(props) {
   var newprops = props.project;
-  console.log(newprops);
 
   let initState = 0;
   const [photoIndex, setPhotoIndex] = useState(initState);
