@@ -14,7 +14,6 @@ import advancedcss3 from "./project-img/advanced-css/advanced-css3.PNG";
 import advancedcss4 from "./project-img/advanced-css/advanced-css4.PNG";
 
 import ambassadornetwork from "./project-img/ambassadornetwork.PNG";
-import ambassadornetwork1 from "./project-img/ambassadornetwork/ambassadornetwork1.PNG";
 import ambassadornetwork2 from "./project-img/ambassadornetwork/ambassadornetwork2.PNG";
 import ambassadornetwork3 from "./project-img/ambassadornetwork/ambassadornetwork3.PNG";
 import ambassadornetwork4 from "./project-img/ambassadornetwork/ambassadornetwork4.PNG";
@@ -60,7 +59,6 @@ import drapdop1 from "./project-img/drap-drop/drap-drop-1.PNG";
 import drapdop2 from "./project-img/drap-drop/drap-drop-2.PNG";
 import drapdop3 from "./project-img/drap-drop/drap-drop-3.PNG";
 
-import gridcss from "./project-img/grid.PNG";
 import gridcss1 from "./project-img/grid-css/grid-1.PNG";
 import gridcss2 from "./project-img/grid-css/grid-2.PNG";
 import gridcss3 from "./project-img/grid-css/grid-3.PNG";

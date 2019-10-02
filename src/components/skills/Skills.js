@@ -17,8 +17,6 @@ const Skills = () => {
     Orgranizing: 90
   };
 
-
-
   return (
     <section className="skills">
       <h2 className="heading-2 skills__header">My Skills</h2>
@@ -29,14 +27,14 @@ const Skills = () => {
           <li className="skill__data">HTML</li>
           <div className="skill__bar">
             <div
-              className="skill__bar__fill animation-html"
+              className="skill__bar__fill html animation-html"
               style={{ width: skills.HTML + "%" }}
             />
           </div>
           <li className="skill__data">CSS</li>
           <div className="skill__bar">
             <div
-              className="skill__bar__fill animation-css"
+              className="skill__bar__fill css animation-css"
               style={{ width: skills.CSS + "%" }}
             />
           </div>

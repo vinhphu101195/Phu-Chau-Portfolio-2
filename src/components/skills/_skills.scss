@@ -6,7 +6,7 @@
   grid-template-rows: min-content max-content;
   grid-row-gap: 5rem;
 
-  
+  animation: fadeIn 0.8s ease-in both;
 
 
   &__header {
@@ -86,43 +86,43 @@
 }
 
 .animation-html {
-  animation: bar-animation-html 2s ease-out;
+  animation: bar-animation-html 3s ease-out;
 }
 .animation-css {
-  animation: bar-animation-css 2s ease-out;
+  animation: bar-animation-css 3s ease-out;
 }
 .animation-javascript {
-  animation: bar-animation-javascript 2s ease-out;
+  animation: bar-animation-javascript 3s ease-out;
 }
 .animation-react {
-  animation: bar-animation-react 2s ease-out;
+  animation: bar-animation-react 3s ease-out;
 }
 .animation-redux {
-  animation: bar-animation-redux 2s ease-out;
+  animation: bar-animation-redux 3s ease-out;
 }
 .animation-reactrouter {
-  animation: bar-animation-reactrouter 2s ease-out;
+  animation: bar-animation-reactrouter 3s ease-out;
 }
 .animation-sass {
-  animation: bar-animation-sass 2s ease-out;
+  animation: bar-animation-sass 3s ease-out;
 }
 .animation-sql {
-  animation: bar-animation-sql 2s ease-out;
+  animation: bar-animation-sql 3s ease-out;
 }
 .animation-nodejs {
-  animation: bar-animation-nodejs 2s ease-out;
+  animation: bar-animation-nodejs 3s ease-out;
 }
 .animation-logical-thinking {
-  animation: bar-animation-logical-thinking 2s ease-out;
+  animation: bar-animation-logical-thinking 3s ease-out;
 }
 .animation-teamwork {
-  animation: bar-animation-teamwork 2s ease-out;
+  animation: bar-animation-teamwork 3s ease-out;
 }
 .animation-problem-solving {
-  animation: bar-animation-problem-solving 2s ease-out;
+  animation: bar-animation-problem-solving 3s ease-out;
 }
 .animation-orgranizing {
-  animation: bar-animation-orgranizing 2s ease-out;
+  animation: bar-animation-orgranizing 3s ease-out;
 }
 
 
@@ -229,4 +229,15 @@
   100% {
     width: 90%;
   }
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }

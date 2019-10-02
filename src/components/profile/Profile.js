@@ -2,6 +2,7 @@ import React from "react";
 import avatar from "./img/avatar.jpg";
 
 const Profile = () => {
+
   return (
     <section className="profile">
       <img
@@ -27,7 +28,7 @@ const Profile = () => {
           about learning new things and outsite activity.
           <br></br>
           <br></br>
-          <h4 className="heading-4">
+          <h4 className="heading-4 loadSkills">
             <i className="fa fa-code icon" aria-hidden="true"></i>
             Experience
           </h4>

@@ -1,6 +1,25 @@
 import React from 'react';
 
 const Contact = () => {
+
+
+    let onScrolling = (firstClass, classElement, classAnimation) => {
+        const lastItem = document.querySelector(firstClass);
+        const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
+        const pageOffset = window.pageYOffset + window.innerHeight;
+
+        if (lastItemOffset <= pageOffset) {
+            var items = document.getElementsByClassName(classElement);
+            for (let i = 0; i < items.length; i++) {
+                items[i].classList.add(classAnimation)
+            }
+        }
+    }
+
+    window.addEventListener("scroll", () => {
+        onScrolling(".contact", "rotation", "rotate-center")
+    });
+
     return (
         <section className="contact">
             <div className="contact__email">
@@ -23,7 +42,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__infor">
-                <h1 className="heading-3  contact__infor__header">MY FREE CONTACT</h1>
+                <h1 className="heading-3  contact__infor__header">please contact me</h1>
                 <div className="contact__infor__detail">
                     <div className="contact__infor__adress">
                         <i className="fas fa-map-marker-alt fa-2x">
@@ -53,8 +72,9 @@ const Contact = () => {
                                 href="https://github.com/vinhphu101195"
                                 target="_blank"
                                 className="contact-icon "
+                                rel="noopener noreferrer"
                             >
-                                <i className="fab fa-github rotate-center" aria-hidden="true" />
+                                <i className="fab fa-github  rotation" aria-hidden="true" />
                             </a>
                         </div>
                         <div>
@@ -62,9 +82,10 @@ const Contact = () => {
                                 href="https://www.linkedin.com/in/phu-chau-155369171/"
                                 target="_blank"
                                 className="contact-icon"
+                                rel="noopener noreferrer"
                             >
                                 <i
-                                    className="fab fa-linkedin-in rotate-center"
+                                    className="fab fa-linkedin-in rotation "
                                     aria-hidden="true"
                                 />
                             </a>
@@ -74,9 +95,10 @@ const Contact = () => {
                                 href="https://www.facebook.com/vinhphu.chau.79"
                                 target="_blank"
                                 className="contact-icon"
+                                rel="noopener noreferrer"
                             >
                                 <i
-                                    className="fab fa-facebook rotate-center"
+                                    className="fab fa-facebook rotation"
                                     aria-hidden="true"
                                 />
                             </a>
