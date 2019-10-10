@@ -1,7 +1,7 @@
 import React from "react";
 
 const Skills = () => {
-  var skills = {
+  const skills = {
     HTML: 90,
     CSS: 80,
     JavaScript: 80,

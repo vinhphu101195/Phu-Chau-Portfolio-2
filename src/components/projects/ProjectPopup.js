@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function ProjectPopup(props) {
-  var newprops = props.project;
+  let newprops = props.project;
 
   let initState = 0;
   const [photoIndex, setPhotoIndex] = useState(initState);
@@ -102,8 +102,8 @@ export default function ProjectPopup(props) {
   );
 }
 
-var showSkills = skills => {
-  var result = null;
+const showSkills = skills => {
+  let result = null;
   if (skills.length > 0) {
     result = skills.map((skill, index) => {
       return (

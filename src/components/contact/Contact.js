@@ -9,7 +9,7 @@ const Contact = () => {
         const pageOffset = window.pageYOffset + window.innerHeight;
 
         if (lastItemOffset <= pageOffset) {
-            var items = document.getElementsByClassName(classElement);
+            let items = document.getElementsByClassName(classElement);
             for (let i = 0; i < items.length; i++) {
                 items[i].classList.add(classAnimation)
             }

@@ -1,8 +1,8 @@
 import React from "react";
 
 const SmallProject = props => {
-  var showSkills = skills => {
-    var result = null;
+  const showSkills = skills => {
+    let result = null;
     if (skills.length > 0) {
       result = skills.map((skill, index) => {
         return (

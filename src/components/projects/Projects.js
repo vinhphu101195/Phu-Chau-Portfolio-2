@@ -11,8 +11,8 @@ const Projects = () => {
     setPopup((popup = data));
   };
 
-  var showProjects = projects => {
-    var result = null;
+  const showProjects = projects => {
+    let result = null;
     if (projects.length > 0) {
       result = projects.map((project, index) => {
         return (
