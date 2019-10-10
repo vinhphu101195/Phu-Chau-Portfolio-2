@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import ProjectContexts from "./contexts/ProjectContexts";
 
@@ -16,17 +16,29 @@ function App() {
 
   const [key, setKey] = useState(false);
 
-  window.addEventListener("scroll", () => {
-    const lastItem = document.querySelector(".loadSkills");
-    const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
-    const pageOffset = window.pageYOffset + window.innerHeight;
-    console.log("lastItemOffset " + lastItemOffset);
-    console.log("pageOffset " + pageOffset);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const lastItem = document.querySelector(".loadSkills");
+      const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
+      const pageOffset = window.pageYOffset + window.innerHeight;
+      if (lastItemOffset + 300 <= pageOffset) {
+        setKey(true)
+      }
+    });
 
-    if (lastItemOffset + 300 <= pageOffset) {
-      setKey(true)
+    return () => {
+      window.removeEventListener("scroll", () => {
+        const lastItem = document.querySelector(".loadSkills");
+        const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
+        const pageOffset = window.pageYOffset + window.innerHeight;
+        if (lastItemOffset + 300 <= pageOffset) {
+          setKey(true)
+        }
+      });
     }
-  });
+  })
+
+
 
   return (
     <div className="container">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Contact = () => {
 
@@ -16,9 +16,18 @@ const Contact = () => {
         }
     }
 
-    window.addEventListener("scroll", () => {
-        onScrolling(".contact", "rotation", "rotate-center")
-    });
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            onScrolling(".contact", "rotation", "rotate-center")
+        });
+
+        return () => {
+            window.removeEventListener("scroll", () => {
+                onScrolling(".contact", "rotation", "rotate-center")
+            });
+        }
+    })
 
     return (
         <section className="contact">
