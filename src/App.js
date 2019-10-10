@@ -24,7 +24,6 @@ function App() {
     console.log("pageOffset " + pageOffset);
 
     if (lastItemOffset + 300 <= pageOffset) {
-      console.log("hello");
       setKey(true)
     }
   });
