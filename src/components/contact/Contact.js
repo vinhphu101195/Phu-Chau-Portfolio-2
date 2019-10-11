@@ -33,21 +33,22 @@ const Contact = () => {
         <section className="contact">
             <div className="contact__email">
                 <h1 className="contact__email__title heading-3">Get in touch</h1>
-                <form className="contact-form row">
-                    <div className="form-field col x-50">
+                <form className="contact-form row" action="mailto:vinhphu101195@gmail.com" method="post" enctype="text/plain">
+                    <div className="form-field col x-50 form-field-name">
                         <input id="name" className="input-text js-input" type="text" required />
                         <label className="label" htmlFor="name">Name</label>
                     </div>
-                    <div className="form-field col x-50">
+                    <div className="form-field col x-50 form-field-email">
                         <input id="email" className="input-text js-input" type="email" required />
                         <label className="label" htmlFor="email">E-mail</label>
                     </div>
-                    <div className="form-field col x-100">
+                    <div className="form-field col x-100 form-field-message">
                         <input id="message" className="input-text js-input" type="text" required />
                         <label className="label" htmlFor="message">Message</label>
                     </div>
+                    <input className="btn form-field-btn" type="submit" value="Sent" />
+
                 </form>
-                <button className="btn mt-2 mg-8" type="submit" >Submit</button>
             </div>
 
             <div className="contact__infor">
