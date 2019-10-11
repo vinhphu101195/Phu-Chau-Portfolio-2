@@ -47,7 +47,7 @@ const Contact = () => {
                         <label className="label" htmlFor="message">Message</label>
                     </div>
                 </form>
-                <input className="btn mt-2" type="submit" value="Submit" />
+                <button className="btn mt-2 mg-8" type="submit" >Submit</button>
             </div>
 
             <div className="contact__infor">
