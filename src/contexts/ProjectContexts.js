@@ -80,7 +80,7 @@ import portfolio4 from "./project-img/portfolio/portfolio5.png";
 export const ProjectContext = createContext();
 
 const ProjectContexts = props => {
-  var projectObject = [
+  const projectObject = [
     {
       name: "The Fincoda Project",
       img: Fincoda,
