@@ -1,24 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Contact = () => {
-
+    // get reference of contact class
+    const refContact = useRef(null);
+    // get reference of social media class
+    const refGithub = useRef(null);
+    const refLinkid = useRef(null);
+    const refFacebook = useRef(null);
 
     const onScrolling = (firstClass, classElement, classAnimation) => {
-        const lastItem = document.querySelector(firstClass);
-        const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
+        const lastItemOffset = firstClass.current.offsetTop + firstClass.current.clientHeight;
         const pageOffset = window.pageYOffset + window.innerHeight;
 
         if (lastItemOffset <= pageOffset) {
-            const items = document.getElementsByClassName(classElement);
-            const itemsArray = Object.entries(items);
-            itemsArray.forEach(element => {
-                element[1].classList.add(classAnimation)
+            classElement.forEach(element => {
+                element.current.classList.add(classAnimation)
             });
         }
     }
 
     const callScrolling = () => {
-        onScrolling(".contact", "rotation", "rotate-center")
+        onScrolling(refContact, [refGithub, refFacebook, refLinkid], "rotate-center")
+
     }
 
     useEffect(() => {
@@ -29,8 +32,10 @@ const Contact = () => {
         }
     })
 
+
+
     return (
-        <section className="contact">
+        <section className="contact" ref={refContact} >
             <div className="contact__email">
                 <h1 className="contact__email__title heading-3">Get in touch</h1>
                 <form className="contact-form row" action="mailto:vinhphu101195@gmail.com" method="post" encType="text/plain">
@@ -84,7 +89,7 @@ const Contact = () => {
                                 className="contact-icon "
                                 rel="noopener noreferrer"
                             >
-                                <i className="fab fa-github  rotation" aria-hidden="true" />
+                                <i className="fab fa-github" ref={refGithub} aria-hidden="true" />
                             </a>
                         </div>
                         <div>
@@ -95,7 +100,8 @@ const Contact = () => {
                                 rel="noopener noreferrer"
                             >
                                 <i
-                                    className="fab fa-linkedin-in rotation "
+                                    className="fab fa-linkedin-in"
+                                    ref={refLinkid}
                                     aria-hidden="true"
                                 />
                             </a>
@@ -108,7 +114,8 @@ const Contact = () => {
                                 rel="noopener noreferrer"
                             >
                                 <i
-                                    className="fab fa-facebook rotation"
+                                    className="fab fa-facebook"
+                                    ref={refFacebook}
                                     aria-hidden="true"
                                 />
                             </a>

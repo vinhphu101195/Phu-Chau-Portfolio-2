@@ -289,6 +289,7 @@
     0% {
       -webkit-transform: rotate(0);
       transform: rotate(0);
+      
     }
     100% {
       -webkit-transform: rotate(360deg);
@@ -307,8 +308,8 @@
   }
   
   .rotate-center {
-    -webkit-animation-duration: 3s;
-    animation-duration: 3s;
+    -webkit-animation-duration: 3.5s;
+    animation-duration: 3.5s;
     -webkit-animation-name: rotate-center;
     animation-name: rotate-center;
   }
