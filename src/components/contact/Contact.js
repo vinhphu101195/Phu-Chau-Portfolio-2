@@ -3,13 +3,13 @@ import React, { useEffect } from 'react';
 const Contact = () => {
 
 
-    let onScrolling = (firstClass, classElement, classAnimation) => {
+    const onScrolling = (firstClass, classElement, classAnimation) => {
         const lastItem = document.querySelector(firstClass);
         const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
         const pageOffset = window.pageYOffset + window.innerHeight;
 
         if (lastItemOffset <= pageOffset) {
-            let items = document.getElementsByClassName(classElement);
+            const items = document.getElementsByClassName(classElement);
             for (let i = 0; i < items.length; i++) {
                 items[i].classList.add(classAnimation)
             }

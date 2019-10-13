@@ -2,9 +2,8 @@ import React from "react";
 
 const SmallProject = props => {
   const showSkills = skills => {
-    let result = null;
     if (skills.length > 0) {
-      result = skills.map((skill, index) => {
+      return skills.map((skill, index) => {
         return (
           <p className="project__detail__item" key={index}>
             <i className="fa fa-check icon" aria-hidden="true"></i>
@@ -13,7 +12,6 @@ const SmallProject = props => {
         );
       });
     }
-    return result;
   };
 
   return (

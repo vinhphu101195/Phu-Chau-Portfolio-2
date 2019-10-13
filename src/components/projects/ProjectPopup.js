@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 export default function ProjectPopup(props) {
-  let newprops = props.project;
+  const newprops = props.project;
 
-  let initState = 0;
+  const initState = 0;
   const [photoIndex, setPhotoIndex] = useState(initState);
 
   useEffect(() => {
@@ -103,9 +103,8 @@ export default function ProjectPopup(props) {
 }
 
 const showSkills = skills => {
-  let result = null;
   if (skills.length > 0) {
-    result = skills.map((skill, index) => {
+    return skills.map((skill, index) => {
       return (
         <span className="popup__label--skills__detail" key={index}>
           {skill}
@@ -113,6 +112,4 @@ const showSkills = skills => {
       );
     });
   }
-
-  return result;
 };

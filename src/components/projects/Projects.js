@@ -5,16 +5,15 @@ import Projectpopup from "./ProjectPopup";
 
 const Projects = () => {
   const { projectObject } = useContext(ProjectContext);
-  let [popup, setPopup] = useState({});
+  const [popup, setPopup] = useState({});
 
   const onClickPopup = data => {
-    setPopup((popup = data));
+    setPopup(data);
   };
 
   const showProjects = projects => {
-    let result = null;
     if (projects.length > 0) {
-      result = projects.map((project, index) => {
+      return projects.map((project, index) => {
         return (
           <SmallProject
             key={index}
@@ -24,7 +23,6 @@ const Projects = () => {
           ></SmallProject>
         );
       });
-      return result;
     }
   };
 

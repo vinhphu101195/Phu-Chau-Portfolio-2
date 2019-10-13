@@ -190,12 +190,11 @@
         align-items: center;
         padding:10rem 0 0 4rem;
         width: 50%;
-        width: 100%;
         
         @media only screen and (max-width: $bp-large) {
          background-color: $color-grey-light-1;  
          padding: 5rem 0;
-
+         width: 100%;
        }
 
 
