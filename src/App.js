@@ -16,25 +16,20 @@ function App() {
 
   const [key, setKey] = useState(false);
 
+  const onScrollingAddSkills = () => {
+    const lastItem = document.querySelector(".loadSkills");
+    const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
+    const pageOffset = window.pageYOffset + window.innerHeight;
+    if (lastItemOffset + 300 <= pageOffset) {
+      setKey(true)
+    }
+  }
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const lastItem = document.querySelector(".loadSkills");
-      const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
-      const pageOffset = window.pageYOffset + window.innerHeight;
-      if (lastItemOffset + 300 <= pageOffset) {
-        setKey(true)
-      }
-    });
+    window.addEventListener("scroll", onScrollingAddSkills);
 
     return () => {
-      window.removeEventListener("scroll", () => {
-        const lastItem = document.querySelector(".loadSkills");
-        const lastItemOffset = lastItem.offsetTop + lastItem.clientHeight;
-        const pageOffset = window.pageYOffset + window.innerHeight;
-        if (lastItemOffset + 300 <= pageOffset) {
-          setKey(true)
-        }
-      });
+      window.removeEventListener("scroll", onScrollingAddSkills);
     }
   })
 

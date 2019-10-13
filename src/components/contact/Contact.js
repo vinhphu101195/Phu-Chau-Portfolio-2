@@ -10,22 +10,22 @@ const Contact = () => {
 
         if (lastItemOffset <= pageOffset) {
             const items = document.getElementsByClassName(classElement);
-            for (let i = 0; i < items.length; i++) {
-                items[i].classList.add(classAnimation)
-            }
+            const itemsArray = Object.entries(items);
+            itemsArray.forEach(element => {
+                element[1].classList.add(classAnimation)
+            });
         }
     }
 
+    const callScrolling = () => {
+        onScrolling(".contact", "rotation", "rotate-center")
+    }
 
     useEffect(() => {
-        window.addEventListener("scroll", () => {
-            onScrolling(".contact", "rotation", "rotate-center")
-        });
+        window.addEventListener("scroll", callScrolling);
 
         return () => {
-            window.removeEventListener("scroll", () => {
-                onScrolling(".contact", "rotation", "rotate-center")
-            });
+            window.removeEventListener("scroll", callScrolling);
         }
     })
 
@@ -33,7 +33,7 @@ const Contact = () => {
         <section className="contact">
             <div className="contact__email">
                 <h1 className="contact__email__title heading-3">Get in touch</h1>
-                <form className="contact-form row" action="mailto:vinhphu101195@gmail.com" method="post" enctype="text/plain">
+                <form className="contact-form row" action="mailto:vinhphu101195@gmail.com" method="post" encType="text/plain">
                     <div className="form-field col x-50 form-field-name">
                         <input id="name" className="input-text js-input" type="text" required />
                         <label className="label" htmlFor="name">Name</label>
