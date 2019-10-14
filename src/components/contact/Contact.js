@@ -11,7 +11,6 @@ const Contact = () => {
     const onScrolling = (firstClass, classElement, classAnimation) => {
         const lastItemOffset = firstClass.current.offsetTop + firstClass.current.clientHeight;
         const pageOffset = window.pageYOffset + window.innerHeight;
-
         if (lastItemOffset <= pageOffset) {
             classElement.forEach(element => {
                 element.current.classList.add(classAnimation)
@@ -21,7 +20,6 @@ const Contact = () => {
 
     const callScrolling = () => {
         onScrolling(refContact, [refGithub, refFacebook, refLinkid], "rotate-center")
-
     }
 
     useEffect(() => {

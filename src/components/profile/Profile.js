@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import avatar from "./img/avatar-new.jpg";
 
-const Profile = () => {
+const Profile = (props) => {
+  const refSkills = useRef(null);
+
+  const onScrollingAddSkills = () => {
+    const lastItemOffset = refSkills.current.offsetTop + refSkills.current.clientHeight;
+    const pageOffset = window.pageYOffset + window.innerHeight;
+    if (lastItemOffset + 300 <= pageOffset) {
+      props.getProps(true);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScrollingAddSkills);
+
+    return () => {
+      window.removeEventListener("scroll", onScrollingAddSkills);
+    }
+  })
 
   return (
-    <section className="profile">
+    <section className="profile" ref={refSkills}>
       <img
         src={avatar}
         alt="Seen on logo 1"
@@ -28,7 +45,7 @@ const Profile = () => {
           about learning new things and outsite activity.
           <br></br>
           <br></br>
-          <h4 className="heading-4 loadSkills">
+          <h4 className="heading-4">
             <i className="fa fa-code icon" aria-hidden="true"></i>
             Experience
           </h4>
