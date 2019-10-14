@@ -5,7 +5,9 @@ const Profile = (props) => {
   const refSkills = useRef(null);
 
   const onScrollingAddSkills = () => {
+    //get location of item
     const lastItemOffset = refSkills.current.offsetTop + refSkills.current.clientHeight;
+    //get location of user view
     const pageOffset = window.pageYOffset + window.innerHeight;
     if (lastItemOffset + 300 <= pageOffset) {
       props.getProps(true);
