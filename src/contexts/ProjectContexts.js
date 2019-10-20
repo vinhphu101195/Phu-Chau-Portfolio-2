@@ -26,12 +26,6 @@ import diary3 from "./project-img/diary/diary3.PNG";
 import diary4 from "./project-img/diary/diary4.PNG";
 import diary5 from "./project-img/diary/diary5.PNG";
 
-import Omnifood from "./project-img/Omnifood.PNG";
-import omnifood1 from "./project-img/omnifood/omnifood1.PNG";
-import omnifood2 from "./project-img/omnifood/omnifood2.PNG";
-import omnifood3 from "./project-img/omnifood/omnifood3.PNG";
-import omnifood4 from "./project-img/omnifood/omnifood4.PNG";
-
 import Recipes from "./project-img/Recipes.PNG";
 import recipes1 from "./project-img/recipes/recipes1.PNG";
 import recipes2 from "./project-img/recipes/recipes2.PNG";
@@ -48,11 +42,6 @@ import todolist2 from "./project-img/to-do-list/todolist2.PNG";
 import todolist3 from "./project-img/to-do-list/todolist3.PNG";
 
 import Chatting from "./project-img/chatting.png";
-
-import bookinglayout from "./project-img/booking-layout.PNG";
-import bookinglayout1 from "./project-img/booking-layout/booking-layout-1.PNG";
-import bookinglayout2 from "./project-img/booking-layout/booking-layout-2.PNG";
-import bookinglayout3 from "./project-img/booking-layout/booking-layout-3.PNG";
 
 import drapdop from "./project-img/drap-drop.PNG";
 import drapdop1 from "./project-img/drap-drop/drap-drop-1.PNG";
@@ -111,9 +100,8 @@ const ProjectContexts = props => {
       skills: ["HTML", "CSS", "Frirebase", "Reactjs", "Redux", "React Router"],
       sourcecode: "https://github.com/vinhphu101195/diary-react-redux-firebase",
       demo: "https://net-ninja-phuchau.herokuapp.com/signin",
-      description: `It is the project from The Net Ninja chanel, in that course, they will show you how to
-    use React, Redux, React Router and Firebase in a project. There are authentication function and storing 
-    data from Firebase. The user can sign up and sign in, then user can create a plan with the title and content.
+      description: `React, Redux, React Router and Firebase are used in a project. There are authentication function and storing 
+      data from Firebase. The user can sign up and sign in, then user can create a plan with the title and content.
     `,
       photo: [Diary, diary1, diary2, diary3, diary4, diary5]
     },
@@ -155,17 +143,6 @@ const ProjectContexts = props => {
       ]
     },
     {
-      name: "The Omnifood Project",
-      img: Omnifood,
-      skills: ["HTML", "CSS", "Jquery", "Google Maps Framework"],
-      sourcecode: "https://github.com/vinhphu101195/OnniFood",
-      demo: "https://vinhphu101195.github.io/OnniFood/",
-      description: `My first HTML and CSS project from Udemy. I love it, it teached me everything i need to know to get started with HTML5 and CSS3, and 
-    learn super cool jQuery effects like animations, scroll effects and "sticky" navigation.    
-    `,
-      photo: [omnifood1, omnifood2, omnifood3, omnifood4]
-    },
-    {
       name: "The Ambassador Network",
       img: ambassadornetwork,
       skills: ["HTML", "CSS", "Google Maps Framework"],
@@ -189,21 +166,9 @@ const ProjectContexts = props => {
       skills: ["Reactjs", "Firebase"],
       sourcecode: "https://github.com/vinhphu101195/chatting",
       demo: "https://pc-chatting.herokuapp.com/",
-      description: `The project idea is from codelabs, 
-    so i cloned it with React.
-    User can login with google account, then they can start chatting.
-`,
+      description: `It's a realtime Project which is build by Reactjs and Firebase for database.
+      User can login with google account, then they can start chatting and sharing photo.`,
       photo: [Chatting]
-    },
-    {
-      name: "The Advanced CSS with Flex",
-      img: bookinglayout,
-      skills: ["HTML", "CSS"],
-      sourcecode: "https://github.com/vinhphu101195/Booking-layout-html-css",
-      demo: "https://vinhphu101195.github.io/Booking-layout-html-css/",
-      description: `I use advance CSS to do this project with display Flexbox. It is the design from Jonas Schmedtmann. 
-    `,
-      photo: [bookinglayout1, bookinglayout2, bookinglayout3]
     },
     {
       name: "Drap & Drop React Beautiful dnd",
