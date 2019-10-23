@@ -40,7 +40,8 @@ import todolist1 from "./project-img/to-do-list/todolist1.PNG";
 import todolist2 from "./project-img/to-do-list/todolist2.PNG";
 import todolist3 from "./project-img/to-do-list/todolist3.PNG";
 
-import Chatting from "./project-img/chatting.png";
+import Chatting from "./project-img/chatting1.PNG";
+import Chatting2 from "./project-img/chatting/chatting2.PNG";
 
 import drapdop from "./project-img/drap-drop.PNG";
 import drapdop1 from "./project-img/drap-drop/drap-drop-1.PNG";
@@ -167,7 +168,7 @@ const ProjectContexts = props => {
       demo: "https://pc-chatting.herokuapp.com/",
       description: `It's a realtime Project which is build by Reactjs and Firebase for database.
       User can login with google account, then they can start chatting and sharing photo.`,
-      photo: [Chatting]
+      photo: [Chatting, Chatting2]
     },
     {
       name: "Drap & Drop React Beautiful dnd",
