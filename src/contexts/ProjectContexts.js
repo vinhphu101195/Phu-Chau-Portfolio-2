@@ -19,12 +19,11 @@ import ambassadornetwork3 from "./project-img/ambassadornetwork/ambassadornetwor
 import ambassadornetwork4 from "./project-img/ambassadornetwork/ambassadornetwork4.PNG";
 import ambassadornetwork5 from "./project-img/ambassadornetwork/ambassadornetwork5.PNG";
 
-import Diary from "./project-img/diary-react-redux-firebase.PNG";
+import Diary from "./project-img/diary2.PNG";
 import diary1 from "./project-img/diary/diary1.PNG";
 import diary2 from "./project-img/diary/diary2.PNG";
 import diary3 from "./project-img/diary/diary3.PNG";
 import diary4 from "./project-img/diary/diary4.PNG";
-import diary5 from "./project-img/diary/diary5.PNG";
 
 import Recipes from "./project-img/Recipes.PNG";
 import recipes1 from "./project-img/recipes/recipes1.PNG";
@@ -103,7 +102,7 @@ const ProjectContexts = props => {
       description: `React, Redux, React Router and Firebase are used in a project. There are authentication function and storing 
       data from Firebase. The user can sign up and sign in, then user can create a plan with the title and content.
     `,
-      photo: [Diary, diary1, diary2, diary3, diary4, diary5]
+      photo: [diary1, diary2, diary3, diary4]
     },
     {
       name: "The Shopping Project",
