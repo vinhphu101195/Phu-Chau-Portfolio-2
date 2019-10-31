@@ -205,10 +205,10 @@ const ProjectContexts = props => {
       name: "My Portfolio 1",
       img: portfolio,
       skills: ["HTML", "CSS", "Reactjs", "React Router"],
-      sourcecode: "https://github.com/vinhphu101195/Phu-Chau-Portfolio",
+      sourcecode: "https://github.com/vinhphu101195/phu.chau.porfolio1",
       demo: "https://phuchauportfolio.netlify.com",
       description:
-        "It is my frist portfolio, I use Reactjs and React Router for this project",
+        "It is my frist portfolio, I use HTML CSS SASS and React Hook and React Page Scroller to build this project.",
       photo: [portfolio, portfolio1, portfolio2, portfolio3, portfolio4]
     }
   ];
