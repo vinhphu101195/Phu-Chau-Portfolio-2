@@ -7,7 +7,7 @@ import Profile from "./components/profile/Profile";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
-import Reference from './components/reference/Reference';
+import Reference from "./components/reference/Reference";
 import Footer from "./components/footer/Footer";
 
 import "./sass/main.scss";
@@ -15,15 +15,16 @@ import "./sass/main.scss";
 function App() {
   const [key, setKey] = useState(false);
 
-  const getKey = (value) => {
-    setKey(value);
-  }
-
   return (
     <div className="container">
       <ProjectContexts>
         <Header></Header>
-        <Profile getProps={(value) => getKey(value)}></Profile>
+        <Profile
+          getProps={value => {
+            // value = true => load skills component
+            setKey(value);
+          }}
+        ></Profile>
         {key ? <Skills></Skills> : ""}
         <Projects></Projects>
         <Contact></Contact>
