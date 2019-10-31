@@ -61,10 +61,10 @@ import reacthook3 from "./project-img/react-hook/react-hook-4.PNG";
 import reacthook4 from "./project-img/react-hook/react-hook-5.PNG";
 
 import portfolio from "./project-img/portfolio.png";
-import portfolio1 from "./project-img/portfolio/portfolio2.png";
-import portfolio2 from "./project-img/portfolio/portfolio3.png";
-import portfolio3 from "./project-img/portfolio/portfolio4.png";
-import portfolio4 from "./project-img/portfolio/portfolio5.png";
+import portfolio1 from "./project-img/portfolio/portfolio1-profile.PNG";
+import portfolio2 from "./project-img/portfolio/portfolio1-project.PNG";
+import portfolio3 from "./project-img/portfolio/portfolio1-project2.PNG";
+import portfolio4 from "./project-img/portfolio/portfolio1-contact.PNG";
 
 export const ProjectContext = createContext();
 
