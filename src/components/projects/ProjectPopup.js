@@ -27,24 +27,25 @@ export default function ProjectPopup(props) {
   return (
     <div className="popup" id="popup">
       <div className="popup__content">
-        <h2 className="heading-2 popup__heading">
-          {newprops.name}
-        </h2>
+        <h2 className="heading-2 popup__heading">{newprops.name}</h2>
         <div className="popup__label--skills">
           {Object.getOwnPropertyNames(newprops).length === 0
             ? ""
             : showSkills(newprops.skills)}
         </div>
         <div className="popup__link-source">
-          {newprops.sourcecode ? <a
-            href={newprops.sourcecode}
-            target="_blank"
-            rel="noopener noreferrer "
-            className="popup__link-source__detail"
-          >
-            <span>Source Code |</span>
-          </a>
-            : ""}
+          {newprops.sourcecode ? (
+            <a
+              href={newprops.sourcecode}
+              target="_blank"
+              rel="noopener noreferrer "
+              className="popup__link-source__detail"
+            >
+              <span>Source Code |</span>
+            </a>
+          ) : (
+            ""
+          )}
 
           <a
             href={newprops.demo}
@@ -57,48 +58,47 @@ export default function ProjectPopup(props) {
         </div>
         <a href="#projects" className="popup__close">
           &times;
-          </a>
+        </a>
         <p className="popup__text">{newprops.description}</p>
 
         {/* slider img */}
-        <img
-          src={photoSrc}
-          className="slider-image"
-          alt="example of project"
-        />
-        {photoIndex === 0 ? <div className="button-container-popup ">  <span
-          className="button-container-popup__right"
-          onClick={() => onclickRight()}
-        >
-          <i className="fas fa-chevron-circle-right" />
-        </span>
-        </div> : photoIndex === newprops.photo.length - 1 ?
-            <div className="button-container-popup ">
-              <span
-                className="button-container-popup__left"
-                onClick={() => onclickLeft()}
-              >
-                <i className="fas fa-chevron-circle-left" />
-              </span>
-            </div>
-
-            : <div className="button-container-popup ">
-              <span
-                className="button-container-popup__left"
-                onClick={() => onclickLeft()}
-              >
-                <i className="fas fa-chevron-circle-left" />
-              </span>
-              <span
-                className="button-container-popup__right"
-                onClick={() => onclickRight()}
-              >
-                <i className="fas fa-chevron-circle-right" />
-              </span>
-            </div>}
-
+        <img src={photoSrc} className="slider-image" alt="example of project" />
+        {photoIndex === 0 ? (
+          <div className="button-container-popup ">
+            <span
+              className="button-container-popup__right"
+              onClick={() => onclickRight()}
+            >
+              <i className="fas fa-chevron-circle-right" />
+            </span>
+          </div>
+        ) : photoIndex === newprops.photo.length - 1 ? (
+          <div className="button-container-popup ">
+            <span
+              className="button-container-popup__left"
+              onClick={() => onclickLeft()}
+            >
+              <i className="fas fa-chevron-circle-left" />
+            </span>
+          </div>
+        ) : (
+          <div className="button-container-popup ">
+            <span
+              className="button-container-popup__left"
+              onClick={() => onclickLeft()}
+            >
+              <i className="fas fa-chevron-circle-left" />
+            </span>
+            <span
+              className="button-container-popup__right"
+              onClick={() => onclickRight()}
+            >
+              <i className="fas fa-chevron-circle-right" />
+            </span>
+          </div>
+        )}
       </div>
-    </div >
+    </div>
   );
 }
 
