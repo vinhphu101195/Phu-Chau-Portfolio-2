@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container">
-                <a href="https://drive.google.com/file/d/1tGndbJok4LyOsKt_uHL1ZP9vhRVq0pOa/view"
+                <a href="https://drive.google.com/open?id=1DVHAZgyCByGn_sg9-a52pYhCW3gZ_F28"
                     className="footer__link"
                     target="_blank"
                     rel="noopener noreferrer"
