@@ -14,6 +14,10 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  @media only screen and (max-width: $bp-small) {
+    
+    position: relative;
+  } 
 
   &__btn {
     align-self: start;
@@ -24,6 +28,8 @@
     @media only screen and (max-width: $bp-small) {
       margin: 0 0;
       padding: 0;
+      position: absolute;
+      top:30%;
     } 
   }
 
@@ -47,6 +53,8 @@
 
     font-size: 1.6rem;
     color: $color-primary-dark;
+
+
 
     &::before,
     &::after {
