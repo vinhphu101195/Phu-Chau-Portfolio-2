@@ -35,6 +35,11 @@
 
   &__bottom {
     width: 80%;
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    } 
 
 
     &__logo{
@@ -63,11 +68,15 @@
       display: block;
       background-color: currentColor;
     }
+
+
   }
 
   // logo
   &__seenon-logos {
     display: flex;
     justify-content: space-around;
+
+
   }
 }
