@@ -1,4 +1,6 @@
 .header {
+  font-family: 'Lobster', cursive;
+
   grid-column: column-start / main-end;
   background-color: $color-grey-dark-1;
   background-image: linear-gradient(
@@ -25,12 +27,18 @@
   }
   &__top {
     margin: auto 0;
+    font-family: 'Lobster', cursive;
     @media only screen and (max-width: $bp-small) {
       margin: 0 0;
       padding: 0;
       position: absolute;
       top:30%;
     } 
+
+    &__title{
+      font-family: 'Bitter', serif;
+
+    }
   }
 
   &__bottom {

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <header className="header">
       <div className="header__top">
-        <h2 className="heading-2 mb-1">Web Developer: </h2>
+        <h2 className="heading-2 mb-1 header__top__title">Web Developer: </h2>
         <h1 className="heading-1 mb-1">Vinh Phu Chau</h1>
         <h3 className="heading-3 ">Work Hard - Play Hard</h3>
       </div>

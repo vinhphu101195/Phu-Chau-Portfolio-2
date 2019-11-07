@@ -9,6 +9,8 @@
   font-size: 8rem;
   color: $color-grey-light-1;
   line-height: 1;
+  font-family: 'Lobster', cursive;
+
 }
 
 .heading-2 {
@@ -16,6 +18,8 @@
   font-size: 5rem;
   line-height: 1;
   color: $color-primary;
+  font-family: 'Lobster', cursive;
+
 }
 
 .heading-3 {
@@ -25,12 +29,17 @@
   color: $color-primary-dark;
   text-transform: uppercase;
   font-style: italic;
+  font-family: 'Bitter', serif;
+
+
 }
 
 .heading-4 {
   @extend %heading;
   font-size: 1.9rem;
   color: $color-primary-dark;
+  font-family: 'Lobster', cursive;
+
 }
 
 .btn {
