@@ -36,9 +36,7 @@
   &__bottom {
     width: 80%;
     @media only screen and (max-width: $bp-small) {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
+      display: none;
     } 
 
 
