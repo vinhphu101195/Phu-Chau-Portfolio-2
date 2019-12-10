@@ -5,10 +5,11 @@ const Skills = () => {
     HTML: 90,
     CSS: 80,
     JavaScript: 80,
-    React: 70,
-    Redux: 50,
-    ReactRouter: 50,
-    Sass: 75,
+    TypeScript: 80,
+    React: 90,
+    Redux: 65,
+    ReactRouter: 60,
+    Sass: 90,
     SQL: 50,
     Nodejs: 30,
     Logical: 85,
@@ -44,6 +45,14 @@ const Skills = () => {
             <div
               className="skill__bar__fill animation-javascript"
               style={{ width: skills.JavaScript + "%" }}
+            />
+          </div>
+
+          <li className="skill__data">TypeScript</li>
+          <div className="skill__bar">
+            <div
+              className="skill__bar__fill animation-reactrouter"
+              style={{ width: skills.TypeScript + "%" }}
             />
           </div>
 
