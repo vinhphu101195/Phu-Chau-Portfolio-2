@@ -96,6 +96,9 @@
 .animation-javascript {
   animation: bar-animation-javascript 3s ease-out;
 }
+.animation-typescript {
+  animation: bar-animation-typescript 3s ease-out;
+}
 .animation-react {
   animation: bar-animation-react 3s ease-out;
 }
@@ -152,12 +155,21 @@
     width: 80%;
   }
 }
+
+@keyframes bar-animation-typescript {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 80%;
+  }
+}
 @keyframes bar-animation-react {
   0% {
     width: 0px;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 @keyframes bar-animation-redux {
@@ -165,7 +177,7 @@
     width: 0px;
   }
   100% {
-    width: 50%;
+    width: 65%;
   }
 }
 @keyframes bar-animation-reactrouter {
@@ -173,7 +185,7 @@
     width: 0px;
   }
   100% {
-    width: 50%;
+    width: 60%;
   }
 }
 @keyframes bar-animation-sass {
@@ -181,7 +193,7 @@
     width: 0px;
   }
   100% {
-    width: 75%;
+    width: 90%;
   }
 }
 @keyframes bar-animation-sql {

@@ -51,7 +51,7 @@ const Skills = () => {
           <li className="skill__data">TypeScript</li>
           <div className="skill__bar">
             <div
-              className="skill__bar__fill animation-reactrouter"
+              className="skill__bar__fill animation-typescript"
               style={{ width: skills.TypeScript + "%" }}
             />
           </div>
