@@ -15,7 +15,7 @@ const Skills = () => {
     Logical: 85,
     TeamWork: 80,
     Problem: 90,
-    Orgranizing: 90
+    Organizing: 90
   };
 
   return (
@@ -111,7 +111,7 @@ const Skills = () => {
       </div>
       <div className="skills__container--personal">
         <ul>
-          <h2 className="skills__header-small ">Solf Skills:</h2>
+          <h2 className="skills__header-small ">Soft Skills:</h2>
 
           <li className="skill__data">Logical Thinking</li>
           <div className="skill__bar ">
@@ -135,7 +135,7 @@ const Skills = () => {
               style={{ width: skills.Problem + "%" }}
             />
           </div>
-          <li className="skill__data">Orgranizing</li>
+          <li className="skill__data">Organizing</li>
           <div className="skill__bar">
             <div
               className="skill__bar__fill animation-orgranizing"
